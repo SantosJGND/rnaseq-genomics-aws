@@ -15,7 +15,7 @@ for arg in "$@"; do
 done
 
 # Create necessary directories
-mkdir -p data reference/star_index results/{qc,trimmed,alignment,counts}
+mkdir -p data reference/hisat2_index results/{qc,trimmed,alignment,counts}
 
 # Check if Nextflow is installed
 if ! command -v nextflow &> /dev/null; then

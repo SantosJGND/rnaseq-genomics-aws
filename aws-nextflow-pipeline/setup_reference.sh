@@ -3,7 +3,7 @@
 # Setup for reference files and HISAT2 index preparation
 # Usage: ./setup_reference.sh [profile]
 # Default profile: aws
-# Available profiles: aws, docker, local, conda
+# Available profiles: aws, docker
 
 # Show help
 if [[ "$1" == "--help" || "$1" == "-h" ]]; then
@@ -12,12 +12,11 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
     echo ""
     echo "Arguments:"
     echo "  profile    Nextflow execution profile (default: aws)"
-    echo "             Available: aws, docker, local, conda"
+    echo "             Available: aws, docker"
     echo ""
     echo "Examples:"
     echo "  $0           # Use default AWS profile"
     echo "  $0 docker    # Use local Docker execution"
-    echo "  $0 local     # Use local execution without containers"
     exit 0
 fi
 
@@ -27,7 +26,6 @@ echo "=== Setting up reference files for Nextflow Pipeline ==="
 echo "Profile: $PROFILE"
 
 # Create reference directory structure
-mkdir -p reference/star_index
 mkdir -p reference/hisat2_index
 
 echo "✓ Created reference directory structure"
