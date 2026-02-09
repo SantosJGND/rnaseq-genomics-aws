@@ -1,0 +1,28 @@
+# Nextflow pipeline artifacts
+.nextflow/
+work/
+results/
+*.log
+report.html
+timeline.html
+trace.txt
+
+# Reference files (if user-added)
+reference/*.fa
+reference/*.gtf
+reference/*.fai
+reference/index/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

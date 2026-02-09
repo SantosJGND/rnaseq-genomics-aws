@@ -1,0 +1,47 @@
+{
+    "reads": "data/",
+    "results": "results",
+    "reference": {
+        "genome": "reference/genome.fa",
+        "annotation": "reference/annotation.gtf",
+        "index_dir": "reference/hisat2_index"
+    },
+    "fastqc": {
+        "threads": 2,
+        "memory": "4 GB"
+    },
+    "fastp": {
+        "threads": 4,
+        "memory": "8 GB",
+        "detect_adapter_for_pe": true,
+        "trim_front1": 0,
+        "trim_front2": 0,
+        "cut_tail": false,
+        "cut_mean_quality": 20,
+        "length_required": 35
+    },
+    "hisat2": {
+        "threads": 3,
+        "memory": "8 GB",
+        "rna_strandness": "FR",
+        "max_intronlen": 500000,
+        "min_intronlen": 20,
+        "spliced_alignment": true
+    },
+    "hisat2_index": {
+        "threads": 4,
+        "memory": "16 GB"
+    },
+    "featurecounts": {
+        "threads": 4,
+        "memory": "8 GB",
+        "feature_type": "exon",
+        "attribute_type": "gene_id",
+        "strand_specific": 0,
+        "min_overlap": 1
+    },
+    "multiqc": {
+        "threads": 2,
+        "memory": "4 GB"
+    }
+}

@@ -1,0 +1,35 @@
+# Nextflow
+.nextflow/
+work/
+results/
+*.log
+report.html
+timeline.html
+trace.txt
+
+# Data
+data/raw/
+!data/.gitkeep
+aws-nextflow-pipeline/data/
+aws-nextflow-pipeline/results/alignment/
+aws-nextflow-pipeline/results/counts/
+aws-nextflow-pipeline/results/qc/
+aws-nextflow-pipeline/results/trimmed/
+aws-nextflow-pipeline/reference
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp

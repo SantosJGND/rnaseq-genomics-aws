@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="Page-1" id="LxZm5JbUJfP1jvNdgEdb">
+    <mxGraphModel dx="1141" dy="1084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="650" pageHeight="350" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" value="Sequencers / External Upload" vertex="1">
+          <mxGeometry height="60" width="360" x="292" y="-250" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Amazon S3 - Raw Data" vertex="1">
+          <mxGeometry height="60" width="315" x="314.5" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-5" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="S3 Lambda&amp;nbsp;&lt;div&gt;Trigger&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="170" x="387" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-6" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" value="AWS EC2 Instance" vertex="1">
+          <mxGeometry height="50" width="170" x="387" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-8" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="Nextflow" vertex="1">
+          <mxGeometry height="50" width="170" x="387" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-10" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" value="AWS Batch&amp;nbsp;EC2&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;QC Jobs&lt;/div&gt;&lt;div&gt;fastqc&lt;/div&gt;&lt;div&gt;fastp&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="162" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-11" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" value="AWS Batch&amp;nbsp;EC2&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Alignment&lt;/div&gt;&lt;div&gt;Hisat2&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="382" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-12" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" value="AWS Batch&amp;nbsp;EC2&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Counts&lt;/div&gt;&lt;div&gt;FeatureCounts&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="592" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Amazon S3 - Results" vertex="1">
+          <mxGeometry height="60" width="315" x="519.5" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-61" edge="1" parent="1" source="lymZGQ0OeOZ1DwSDKbLf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;" target="lymZGQ0OeOZ1DwSDKbLf-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Amazon S3 - Reference" vertex="1">
+          <mxGeometry height="60" width="230" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" value="Quilt" vertex="1">
+          <mxGeometry height="60" width="315" x="140" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-27" edge="1" parent="1" source="lymZGQ0OeOZ1DwSDKbLf-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lymZGQ0OeOZ1DwSDKbLf-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="-100" as="sourcePoint" />
+            <mxPoint x="512" y="-100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-28" connectable="0" parent="lymZGQ0OeOZ1DwSDKbLf-27" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Rclone sync" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-32" edge="1" parent="1" source="lymZGQ0OeOZ1DwSDKbLf-3" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lymZGQ0OeOZ1DwSDKbLf-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="442" y="50" as="sourcePoint" />
+            <mxPoint x="492" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-33" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lymZGQ0OeOZ1DwSDKbLf-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472" y="22" as="sourcePoint" />
+            <mxPoint x="522" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-36" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="182.5" y="260" as="sourcePoint" />
+            <mxPoint x="752.5" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-37" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="182" y="390" as="sourcePoint" />
+            <mxPoint x="752" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-38" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lymZGQ0OeOZ1DwSDKbLf-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="298" y="390" as="sourcePoint" />
+            <mxPoint x="467.5000000000002" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-39" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lymZGQ0OeOZ1DwSDKbLf-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="677" y="390" as="sourcePoint" />
+            <mxPoint x="492" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-40" edge="1" parent="1" source="lymZGQ0OeOZ1DwSDKbLf-17" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="483" y="540" as="sourcePoint" />
+            <mxPoint x="467.5000000000002" y="613" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-48" parent="1" style="swimlane;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;fillColor=none;gradientColor=none;startSize=23;" value="&lt;span style=&quot;font-size: 12px; font-weight: 400; text-align: left; background-color: light-dark(rgb(27, 29, 30), rgb(0, 0, 0));&quot;&gt;s3://genexomics-references/&lt;/span&gt;" vertex="1">
+          <mxGeometry height="263" width="230" x="952" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-44" parent="lymZGQ0OeOZ1DwSDKbLf-48" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;resizable=0;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&amp;nbsp;└── hg38/&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;├── fasta/&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;└── hg38.fa&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp;└── hg38.fa.fai&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;├── hisat2/&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;├── hg38.1.ht2&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;├── hg38.2.ht2&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;└── ...&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="230" y="23" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-50" parent="1" style="swimlane;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;fillColor=none;gradientColor=none;startSize=23;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;s3://genexomics-results/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="263" width="230" x="952" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-51" parent="lymZGQ0OeOZ1DwSDKbLf-50" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;resizable=0;" value="&lt;div&gt;&lt;div&gt;&amp;nbsp;└── &amp;lt;run_id&amp;gt;/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;├── alignments/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;├── counts/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;├── qc/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;└── multiqc/&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="130" y="23" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-56" parent="1" style="swimlane;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;fillColor=none;gradientColor=none;startSize=23;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px; font-weight: 400;&quot;&gt;s3://genexomics-raw/&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="263" width="230" x="952" y="-250" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-57" parent="lymZGQ0OeOZ1DwSDKbLf-56" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;resizable=0;" value="&lt;div&gt;&lt;div&gt;&amp;nbsp;└── runs/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;└── &amp;lt;run_id&amp;gt;/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;├── *.fastq.gz&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;└── metadata.json&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="230" y="23" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-62" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Legend&lt;/h1&gt;&lt;div&gt;## Colors&lt;/div&gt;&lt;div&gt;Green: Amazon S3;&amp;nbsp; Orange: AWS Batch; Purple: orchestration; Pink: Quilt.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;## Roles (circles)&lt;/div&gt;&lt;div&gt;IAM Exec Role : run on S3 Raw Data bucket.&amp;nbsp;&lt;/div&gt;&lt;div&gt;IAM S3 Role : Get permissions from reference and raw data S3 buckets, Post (write) permissions to Amazon S3 -. results.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;## Containers&lt;/div&gt;&lt;div&gt;&lt;b&gt;Sequencer external outtput&lt;/b&gt;:&amp;nbsp; with local&amp;nbsp; AWS cli and credentials to sync data to s3 bucket. Transfer data script to perform trannsfer automatically.&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Amazon S3 - Raw Data&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Store raw FASTQ output files from Perturb-Seq experiments. Serves as long term storage as well.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;Amazon S3 Lambda event trigger&lt;/b&gt; -&amp;nbsp; Lambda function that runs in S3 deployed acts as bucket trigger for Batch deployment - requires IAM role to execute.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Amazon EC2 Instance&lt;/b&gt; -&amp;nbsp; Small EC2 to deploy nextflow pipeline using awsbatch profile.&lt;/div&gt;&lt;div&gt;&lt;b&gt;Batch Compute Environment&lt;/b&gt; - Compute environment where docker containers are deployed.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Amazon S3 -&amp;nbsp; Results : &lt;/b&gt;Final bucket for results, permanent data storage.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Quilt&lt;/b&gt; - Metadata storage.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="290" width="780" x="50" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-65" edge="1" parent="1" source="lymZGQ0OeOZ1DwSDKbLf-6" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;resizable=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="lymZGQ0OeOZ1DwSDKbLf-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-66" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;resizable=0;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="IAM&lt;div&gt;Exec&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="50" x="542" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;resizable=0;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="IAM&lt;div&gt;S3&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="50" x="542" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-70" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;resizable=0;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="IAM&lt;div&gt;S3&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="50" x="310" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;resizable=0;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="IAM&lt;div&gt;S3&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="50" x="530" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="lymZGQ0OeOZ1DwSDKbLf-72" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;resizable=0;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="IAM&lt;div&gt;S3&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="50" x="740" y="330" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
