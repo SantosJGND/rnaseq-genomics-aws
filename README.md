@@ -14,9 +14,10 @@ The pipeline consists of three integrated components:
 
 ### Prerequisites
 
-- Nextflow 20.10+
-- Docker 20.10+ or Conda 4.8+
-- AWS CLI 2.0+ (for cloud execution)
+- **Nextflow**: 24.10.2.5932 (workflow management)
+- **Docker**: 29.1.3 (containerization)
+- **AWS CLI**: 2.0+ (cloud interface - only for AWS deployment)
+- **jq**: 1.6+ (JSON processing)
 - 8GB+ RAM, 4+ CPU cores (minimum)
 
 ## Component Documentation
